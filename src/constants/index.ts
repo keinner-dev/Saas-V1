@@ -161,7 +161,7 @@ export const DASHBOARD_CARD_MENU = [
   },
 ];
 
-export const VENDOR_MOVEMENTS: Vendor[] = [
+export const VENDOR_MOVEMENTS = [
   {
     src: 'https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=128',
     name: 'AWS',
