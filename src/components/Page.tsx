@@ -18,7 +18,7 @@ import { SearchIcon, Settings2Icon, DownloadIcon } from "lucide-react";
 
 export const Page = ({ children } : React.PropsWithChildren) => {
 return (
-    <div className="px-4 py-8">
+    <div className="px-4 py-8 md:">
         {children}
     </div>
 )
