@@ -6,6 +6,7 @@
 /**
  * Custom Modules
  */
+import { columns } from "./Columns";
 
 /**
  * Componets
@@ -23,6 +24,7 @@ import { UploadCloudIcon, PlusIcon } from "lucide-react";
  *Constant 
  */
 import { VENDOR_MOVEMENTS } from "../constants";
+import { DataTable } from "./DataTable";
 
 export const DashboardTable = () => {
     return (
@@ -53,6 +55,8 @@ export const DashboardTable = () => {
                 </Button>
             </div>
            </div>
+
+           <DataTable columns={columns} data={VENDOR_MOVEMENTS} />
         </div>
     )
 }

@@ -26,15 +26,7 @@ import {
 /**
  * Types
  */
-export interface Vendor {
-  src: string;
-  name: string;
-  website: string;
-  rating: number;
-  ratingGrowthPercent: number;
-  lastAssessed: string;
-  categories: string[];
-}
+import type { Vendor } from '../components/Columns';
 
 export const VENDOR_BREAKDOWN = [
   { month: 'Jan 2025', asia: 35, us: 20, eu: 30 },
@@ -161,7 +153,7 @@ export const DASHBOARD_CARD_MENU = [
   },
 ];
 
-export const VENDOR_MOVEMENTS = [
+export const VENDOR_MOVEMENTS: Vendor[] = [
   {
     src: 'https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=128',
     name: 'AWS',
